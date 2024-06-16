@@ -3,108 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de Usuario</title>
+    <title>Perfil del Usuario</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
         body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f4f4f4;
             display: flex;
-            justify-content: center;
             align-items: center;
+            justify-content: center;
             height: 100vh;
             margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
         }
-
         .container {
             display: flex;
-            flex-direction: row;
-            border: 1px solid #ccc;
-            padding: 20px;
-            border-radius: 10px;
-            max-width: 600px;
-            background-color: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .profile-section {
-            display: flex;
-            flex-direction: column;
             align-items: center;
-            margin-right: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            width: 500px;
+            background-color: #f9f9f9;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            font-size: 15px; /* Tamaño de la letra más pequeña */
         }
-
-        .profile-section img {
-            border-radius: 50%;
+        .profile-pic-container {
+            text-align: center;
+        }
+        .profile-pic {
             width: 150px;
             height: 150px;
-            background-color: #ccc;
-            margin-bottom: 10px;
-        }
-
-        .profile-section input {
-            text-align: center;
-            padding: 8px;
-            width: 150px;
-            font-family: 'Roboto', sans-serif;
-        }
-
-        .info-section {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            flex: 1;
-        }
-
-        .form-group {
+            border-radius: 50%;
+            background-color: #ddd;
+            margin: auto;
             display: flex;
             align-items: center;
-            margin-bottom: 15px;
+            justify-content: center;
+            font-size: 18px;
+            color: #666;
         }
-
-        .form-group label {
-            width: 150px;
+        .details {
+            margin-left: 20px;
+        }
+        .details div {
+            margin-bottom: 10px;
+        }
+        .username {
+            text-align: center;
+            margin-top: 10px;
             font-weight: bold;
-            font-family: 'Roboto', sans-serif;
-        }
-
-        .form-group input {
-            flex: 1;
-            padding: 8px;
-            box-sizing: border-box;
-            font-family: 'Roboto', sans-serif;
-            font-weight: 400;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="profile-section">
-            <img src="https://via.placeholder.com/150" alt="Foto de Perfil">
-            <input type="text" id="nombre_usuario" name="nombre_usuario" placeholder="Nombre de Usuario">
+        <div class="profile-pic-container">
+            <div class="profile-pic">150 x 150</div>
+            <div class="username">Luis Arreta</div>
         </div>
-        <div class="info-section">
-            <div class="form-group">
-                <label for="apellidos">Apellidos:</label>
-                <input type="text" id="apellidos" name="apellidos">
-            </div>
-            <div class="form-group">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre">
-            </div>
-            <div class="form-group">
-                <label for="edad">Edad:</label>
-                <input type="number" id="edad" name="edad">
-            </div>
-            <div class="form-group">
-                <label for="programa">Programa Académico:</label>
-                <input type="text" id="programa" name="programa">
-            </div>
-            <div class="form-group">
-                <label for="semestre">Semestre:</label>
-                <input type="text" id="semestre" name="semestre">
-            </div>
+        <div class="details">
+            <div><strong>Apellidos:</strong> Arrieta Milanes</div>
+            <div><strong>Nombre:</strong> Luis Arrieta </div>
+            <div><strong>Edad:</strong> 18</div>
+            <div><strong>Programa Académico:</strong> Licenciatura en Informática</div>
+            <div><strong>Semestre:</strong> 3ro</div>
         </div>
     </div>
 </body>
